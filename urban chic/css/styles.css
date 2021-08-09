@@ -1,0 +1,98 @@
+html,
+body {
+  height: 100%;
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+
+.carousel-inner img {
+    width: 640px;
+    height: 600px;
+    padding-top: 5rem;
+}
+
+.shadow-bg {
+    width: 100%;
+    min-height: 300px;
+    background-color: #cf8c2081;
+}
+
+.gallery .container {
+    margin-top: -200px;
+    background-color: white;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+
+.relative { 
+    position: relative;
+    margin: 15px 2.5px;
+    overflow: hidden;
+    background-color: white;
+}
+
+
+
+.relative .image {
+    width: 100%;
+    height: 300px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relative:hover .image {
+    border-color: black;
+}
+
+.relative::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(59, 48, 11, 0.65);
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+}
+
+.relative:hover {
+    cursor: pointer;
+}
+
+.relative:hover::before{
+    opacity: .75;
+    -webkit-transform: rotateY(90deg);
+    transform: rotateY(90deg);
+}
+
+.contact{
+    background-color: #cf8c2081;
+}
+
+.icons{
+    padding: 4rem;
+}
+
+.payment img {
+    margin: auto;
+    display: block;
+    padding: 2rem;
+}
+
+footer {
+    color: rgb(17, 17, 17);
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+  }
